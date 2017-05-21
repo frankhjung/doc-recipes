@@ -1,10 +1,8 @@
-documents-recipes
-=================
+# documents-recipes
 
-My favorite food recipes.
+My favourite recipes.
 
-Why?
-----
+## Why?
 
 Because food is wonderful!
 
@@ -15,8 +13,7 @@ are a bonus. But, ultimately it is all about the taste!
 
 So please, enjoy!
 
-How To - Write a New Recipe
----------------------------
+## How To - Write a New Recipe
 
 I use LibreOffice to write these recipes from a template (*_recipe.ott*) and
 save them in Open Document Format. To share them would export as a PDF, but
