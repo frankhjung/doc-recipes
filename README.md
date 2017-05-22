@@ -13,9 +13,20 @@ are a bonus. But, ultimately it is all about the taste!
 
 So please, enjoy!
 
-## How To - Write a New Recipe
+## How To - write a new recipe (LibreOffice)
 
 I use LibreOffice to write these recipes from a template (*_recipe.ott*) and
-save them in Open Document Format. To share them would export as a PDF, but
-most of my friends now use LibreOffice, so sending ODF is much less of a
-problem.
+save them in Open Document Format. To share them, export as a PDF. However, most
+of my friends now use LibreOffice, so sending ODF is now much less of a problem.
+
+## How To - write a new recipe (Tex)
+
+Copy the recipe template `_recipe.tex` to a new file, for example MyRecipe.tex.
+
+Edit TeX file to update header, ingredients and method.
+
+Create PDF using:
+
+```bash
+make -e DOCS=MyRecipe
+```
