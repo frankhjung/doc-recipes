@@ -10,8 +10,7 @@
 .SUFFIXES: .tex .pdf
 .DEFAULT: all
 
-DOCS = _recipe
-TEXS = $(patsubst %, %.tex, $(DOCS))
+TEXS := $(wildcard *.tex)
 
 .tex.pdf:
 	-latexmk -f -gg -quiet -pdf \
