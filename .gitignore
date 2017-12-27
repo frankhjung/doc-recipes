@@ -4,4 +4,5 @@
 *.fls
 *.html
 *.log
+*.out
 *.pdf
