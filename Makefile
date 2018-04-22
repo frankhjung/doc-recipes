@@ -24,7 +24,7 @@ all: $(tex)
 clean:
 	-latexmk -quiet -c $(TEXS)
 	@$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
+	@$(RM) *~
 
 cleanall: clean
 	-latexmk -quiet -C $(TEXS)
-	@$(RM) *~
