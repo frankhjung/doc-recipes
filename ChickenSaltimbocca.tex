@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi-column for ingredients
+\usepackage{hyperref}   % links
+\usepackage{times}      % alternate font
+
+\pagestyle{fancy}
+\fancyhf{}              % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Chicken Saltimbocca\footnotemark[1]}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+   \item $ 2 $ chicken fillets
+   \item $ 8 $ sage leaves
+   \item $ 6 $ slices pancetta or prosciutto
+   \item $ \frac {1} {2} $ cup plain flour
+\end{itemize}
+
+\columnbreak
+
+\begin{itemize}
+   \item $ 1 $ tablespoon olive oil
+   \item $ 1 $ tablespoon butter
+   \item $ \frac {1} {2} $ cup white wine or sake
+   \item $ 1 $ teaspoon Dijon mustard
+   \item $ 50 $ grams chilled, cubed butter
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+   \item Cut chicken fillets in half. Cut each half through cross-ways so that you have two thin, flat pieces.
+   \item Place a sage leaf on top and cover with a piece of pancetta. 
+         Repeat until all pieces are covered (four pieces of chicken for each fillet). 
+         Dust lightly with flour.
+   \item Heat oil and butter in a large frying pan and place chicken in pan, pancetta side down.
+         Cook for a couple of minutes each side, until golden.
+         Remove and set aside.
+   \item Deglaze the pan by adding the white wine. Gently scrape up any bits from the bottom of the pan with a wooden spoon.
+         Add chilled butter, a little at a time, stir until combined and slightly thickened. Stir in Dijon mustard.
+   \item When sauce is ready, return chicken to pan and heat through.
+   \item Serve with steamed vegetables.
+\end{enumerate}
+
+\footnotetext[1]{Pronounced \textit{saltim'bokka}, Italian for jumps in the mouth.}
+
+\end{document}
