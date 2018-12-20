@@ -15,9 +15,11 @@ So please, enjoy!
 
 ## How To - write a new recipe (LibreOffice)
 
-I use LibreOffice to write these recipes from a template (*_recipe.ott*) and
-save them in Open Document Format. To share them, export as a PDF. However, most
-of my friends now use LibreOffice, so sending ODF is now much less of a problem.
+Write recipes with LibreOffice using the template: `_recipe.ott`.
+Then save in Open Document Format.
+
+To share them, export as a PDF. However, most of my friends now use LibreOffice,
+so sending an ODF is now much less of a problem.
 
 ## How To - write a new recipe (Tex)
 
@@ -28,5 +30,6 @@ Edit TeX file to update header, ingredients and method.
 Create PDF using:
 
 ```bash
-make -e DOCS=MyRecipe
+make MyRecipe.pdf
 ```
+
