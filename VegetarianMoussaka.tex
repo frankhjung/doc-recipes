@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Vegetarian Moussaka}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item 2 medium eggplants, 1 cm slices
+  \item 1 medium onion
+  \item 250 \si{\gram} swiss brown mushrooms
+  \item 1 cup green lentils
+  \item 3 cloves garlic, minced
+  \item 1 tin diced tomatoes
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item 2 cups water
+  \item 1 teaspoon oregano
+  \item ground black pepper
+  \item 1 tablespoon butter
+  \item 2 tablespoon plain flour
+  \item 2 cups milk
+  \item $\frac{3}{4}$ cup grated Parmesan
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat oven to $200\si{\celsius}$. In a single layer, lay eggplant rounds out on paper towel-lined baking sheets. Sprinkle salt on both sides of eggplant. Let sit 10 minutes, then pat dry with paper towels. Brush eggplants with 2 tablespoons oil and place on baking sheets in a single layer. Bake until tender, 12 minutes.
+  \item In a large pot over medium heat, heat remaining 2 tablespoons oil. Add onion and mushrooms and cook until tender, 5 minutes. Add garlic and cook until fragrant, 1 minute more. Add lentils, tomatoes, and water. Season with oregano, salt, and pepper. Simmer until lentils are tender, 30 minutes. Add more water as necessary if sauce looks too thick.
+  \item In a medium pot over medium heat, melt butter. Whisk in flour and cook 1 minute. Slowly pour in milk, whisking until no lumps remain. Cook until thickened, about 5 minutes, then add in Parmesan and stir until melted.
+  \item Place yolks in a small bowl and lightly beat. Add about 2 tablespoons of bechamel and whisk to combine, then pour mixture back into bechamel and whisk until combined. Season with salt and pepper. Let simmer until thickened, about 5 minutes more.
+  \item In a large baking dish, place a single layer of eggplants. Add half of the lentil mixture, then repeat with more eggplant and the rest of the lentils. Top with a final layer of eggplants. Spoon bechamel over eggplant and top with remaining $\frac{1}{4}$ cup of Parmesan. Bake until top is golden and heated through, 30 minutes.
+\end{enumerate}
+
+\href{https://www.delish.com/cooking/recipe-ideas/a30876085/vegetarian-moussaka-recipe/}{Vegetarian Moussaka by Makinze Gore}
+
+\end{document}
