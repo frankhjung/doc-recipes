@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref} % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Potato and Cauliflower Curry}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item vegetable oil
+  \item large onion or shallots
+  \item ginger
+  \item garlic
+  \item $\frac {1} {2}$ teaspoon turmeric
+  \item 1 teaspoon ground cumin
+  \item 1 teaspoon curry powder
+\end{itemize}
+
+\columnbreak
+
+\begin{itemize}
+  \item 225 \si{\gram} chopped tomatoes
+  \item 1 cauliflower, cut into florets
+  \item 2 potatoes, cut into chunks
+  \item 1 small green chilli, cut length ways
+  \item squeeze of lemon juice
+  \item fresh coriander, to serve
+  \item natural yogurt, to serve
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat the oil in a saucepan. Cook the onion for 10 mins until soft, then add the ginger, garlic, turmeric, cumin and curry powder.
+  \item Cook for a minute more.
+  \item Stir in the tomatoes.
+  \item Add the cauliflower, potatoes and split chilli, seasoning to taste.
+  \item Cover with a lid and gently cook for a good 30 mins, stirring occasionally, until the vegetables are tender.
+  \item Add a drop of water if you need to, but it is meant to be a dry curry.
+  \item When the vegetables are cooked, remove the chilli, if you like, stir in a squeeze of lemon juice and scatter with coriander.
+  \item Serve with a dollop of yogurt.
+\end{enumerate}
+
+\href{https://www.bbcgoodfood.com/recipes/cauliflower-potato-curry}{BBC Good Food}
+
+\end{document}
