@@ -11,25 +11,27 @@
 #
 #	make MyRecipe.pdf
 
-.PHONY: all clean cleanall
 .SUFFIXES: .tex .pdf
 .DEFAULT: all
 
 TEXS := $(wildcard *.tex)
+PDFS := $(patsubst %.tex, %.pdf, $(TEXS))
 
 .tex.pdf:
 	-latexmk -f -gg -quiet -pdf \
 		-interaction=nonstopmode -shell-escape \
 		-pdflatex="pdflatex %O %S" $<
 
-tex := $(patsubst %.tex, %.pdf, $(TEXS))
 
-all: $(tex)
+.PHONY: all
+all:		$(PDFS)
 
+.PHONY: clean
 clean:
 	-latexmk -quiet -c $(TEXS)
-	@$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
-	@$(RM) *~
+	-$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
+	-$(RM) *~
 
+.PHONY: cleanall
 cleanall: clean
 	-latexmk -quiet -C $(TEXS)
