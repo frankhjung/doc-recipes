@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Mum's Kartoffelpuffer (German Potato Pancakes)}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ 2 $ medium potatoes, grated
+  \item $ 1 $ small onion
+  \item $ 1 $ egg
+  \item $ 2 $ tablespoons corn or potato flour
+  \item salt \& pepper
+\end{itemize}
+
+\columnbreak
+
+\begin{itemize}
+  \item $ 1 $ tablespoon vegetable oil
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item remove excess water from grated potato
+  \item mix all ingredients with a fork
+  \item add to frying pan using a spoon and flatten as a pancake
+  \item brown on both sides
+\end{enumerate}
+
+\href{https://www.daringgourmet.com/traditional-kartoffelpuffer-reibekuchen-german-potato-pancakes/}{more German recipes}
+
+\end{document}
