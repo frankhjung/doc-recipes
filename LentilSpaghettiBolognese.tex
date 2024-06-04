@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Lentil Spaghetti Bolognese}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ 400 $ \si{\gram} spaghetti
+  \item $ 1 $ onion, chopped
+  \item $ 1 $ celery stalk, chopped
+  \item $ 3 $ garlic cloves, chopped
+  \item $ \qty{420}{\gram} $ tomato paste
+  \item $ \qty{250}{\gram} $ punnet cherry tomatoes
+  \item $ \qty{400}{\gram} $ lentils, rinsed, drained
+  \item $ \frac {1} {2} $ cup hard cheese, grated
+  \item Basil leaves to serve
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat oil in a frypan over medium heat and cook onion, celery and garlic for 2 minutes or until softened. 
+  \item Add pasta sauce and $ \frac {1}{2} $ cup ($ \qty{125}{\milli\litre} $) water, bring to a simmer.
+  \item Add tomatoes and cook for 5 minutes or until softened.
+  \item Add lentils, season and cook for a further 1 minute.
+  \item Cook the pasta in a large saucepan of boiling salted water according to packet instructions.
+  \item Drain pasta and toss with the sauce.
+  \item Divide among bowls and serve with vegetarian hard cheese or parmesan and basil leaves.
+\end{enumerate}
+
+\end{document}
