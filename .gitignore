@@ -1,5 +1,6 @@
 *~
 *.aux
+*.dvi
 *.fdb_latexmk
 *.fls
 *.html
