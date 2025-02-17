@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Vegetables with Whole Spices}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item vegetables: cauliflower, potato, beans, pumpkin
+  \item $ 6 $ tablespoons vegetable oil
+  \item $ \frac{1}{4} $ teaspoon whole fenugreek seeds
+  \item $ 1 $ teaspoon whole fennel seeds
+  \item $ 1 $ teaspoon whole cumin seeds
+  \item $ 2 $ dried hot red chillies
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item $ 1 $ teaspoon ground coriander seeds
+  \item $ 1 $ teaspoon salt
+  \item $ \frac{1}{2} $ teaspoon ground black pepper
+  \item $ 1 $ teaspoon garam masala
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Cut vegetables into $ \qty{1}{\centi\metre} $ pieces, soak in cold water
+  \item Drain vegetables, pat dry
+  \item Heat oil until very hot in a deep pan
+  \item Scatter fenugreek, fennel, cumin, red chillies, stir once
+  \item Add vegetables, stir, turn heat to medium
+  \item Sprinkle turmeric, coriander, salt and pepper over vegetables and saute for $ \qty{8}{\minute} $
+  \item Add $ \qty{60}{\milli\litre} $ water, cover
+  \item Turn heat to very low and steam vegetables for $ \qty{10}{\minute} $
+  \item Sprinkle \textit{garam masala} over vegetables and serve
+\end{enumerate}
+
+Modified from Cauliflower \& Potato with whole seeds from \href{https://www.goodreads.com/book/show/1855233.Eastern_Vegetarian_Cooking}{Eastern Vegetarian Cooking, Madhur Jaffrey}
+
+\end{document}
