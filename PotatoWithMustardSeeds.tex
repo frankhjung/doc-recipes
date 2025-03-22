@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Dry Potatos with Mustard Seeds}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ 4 $ medium-sized boiling potatoes, the waxier the better
+  \item $ 6 $ tablespoon vegetable oil
+  \item $ 1 $ clove garlic, crushed
+  \item $ 1 $ shallot, diced
+  \item $ 1 $ tablespoon black mustard seeds
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item $ \frac{1}{2} $ teaspoon salt
+  \item $ \frac{1}{4} $ teaspoon cayenne pepper
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Peel and dice potatoes into $ \qty{2}{\centi\metre} $ pieces. Put into
+  a bowl of water and drain just before you start to cook.
+  \item Heat the oil in a pan over a medium heat. Add the mustard seeds. As
+  they start to pop, add the garlic, shallot. Stir in the turmeric.
+  \item Add the drained potatoes, stir for $ \qty{1}{\minute} $.
+  \item Cover the potatoes and turn to low. Cook covered for $
+  \qty{30}{\minute} $ or until potatoes are cooked through but retain their
+  shape. 
+  \item Stir gently every $ \qty{5}{\minute} $ to $ \qty{7}{\minute} $.
+  \item When the potatoes are cooked, sprinkle with salt and cayenne. Stir
+  again to mix.
+\end{enumerate}
+
+\href{https://ivu.org/legacy-recipes/indian-root/dry-j.html}{Madhur Jaffrey - Eastern Vegetarian Cooking}
+
+\end{document}
