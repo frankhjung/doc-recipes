@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Cauliflower With Whole Spices}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ 1 $ medium cauliflower, cut into $ \qty{2}{\cm} $ pieces
+  \item $ 5 $ tablespoons vegetable oil
+  \item $ 1 $ teaspoon whole cumin seeds
+  \item $ 1 $ teaspoon whole coriander seeds
+  \item $ 1 $ teaspoon black caraway seeds
+  \item $ 1 $ dried chilli, chopped
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ 6 $ cloves garlic, chopped
+  \item $ 2 $ teaspoons ground coriander
+  \item $ 2 $ teaspoons ground cumin
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item $ 1 $ teaspoon salt
+  \item $ \frac{1}{4} $ teaspoon cayenne pepper
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat oil in a frying pan.
+  \item When hot, add the whole cumin, coriander, caraway and chilli.
+  \item Lower heat to medium and put in the garlic and onion.
+  \item Stir and fry for about $ \qty{5}{\min} $ minutes or until onions and garlic are lightly brown.
+  \item Add cauliflower, ground coriander, cumin and turmeric. Stir to mix.
+  \item Put in $ \frac{1}{4} $ cup ($ \qty{60}{\ml} $) water and bring to a simmer.
+  \item Cover tightly and steam cauliflower over a very low heat for $ \qty{10}{\min} $ or until tender.
+  \item Stir every $ \qty{3}{\min} $, replacing the lid each time.
+  \item Boil any remaining liquid so the cauliflower has a \textit{dry} look.
+\end{enumerate}
+
+\href{https://www.masterclass.com/articles/indian-cauliflower-recipe-by-madhur-jaffrey}{Madhur Jaffrey's Cauliflower and Potatoes Recipe}
+
+\end{document}
