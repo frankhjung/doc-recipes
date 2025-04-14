@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Hyderabadi Lamb with Tomatoes (Timatar Gosht)}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item \qty{500}{\gram} lamb, cut into \qty{2}{\cm} pieces
+  \item $ 1$ tablespoon fresh ginder, peeled and grated
+  \item $ 6 $ cloves garlic, peeled and crushed
+  \item $ 1 \frac{1}{2} $ teaspoon ground cumin
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item salt
+  \item $ 3 $ tablepoons vegetable or peanut oil
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ 1 $ onion, finely chopped
+  \item \qty{450}{\gram} fresh tomatoes, peeled, finely chopped and then crushed
+  \item $ 3 - 6 $ fresh hot chillies, chopped
+  \item $ 10 $ curry or basil leaves
+  \item $ 2 - 3 $ tablespoons fresh coriander, chopped
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Put the mean in a bowl. Add the ginger, garlic, cumin, turmeric, salt. Mix well and set aside for \qty{30}{\minute}.
+  \item Pour the oiul into a wide, lidded pan and set over a medium-high heat. When hot, add the onions and fry them until brown on the edges.
+  \item Add the meat, together with its marinade. Stir and fry for \qty{1}{\minute}.
+  \item Add the tomatoes, chillies, curry leaves, coriander and fry for \qty{2}{\minute}.
+  \item Cover, reduce the heat to medium-low and cook for \qty{10}{\minute}, stirring occasionally until the meat is lightly brown.
+  \item Cover, reduce the heat to low and cook for \qty{50}{\minute}, stirring occasionally until the meat is tender.
+\end{enumerate}
+
+Masoor Ahmed's, India, Madhur Jaffrey's Ultimate Curry Bible.
+
+\end{document}
