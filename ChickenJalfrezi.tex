@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Chicken Jalfrezi}
+
+\begin{document}
+
+\begin{multicols}{2}
+
+\subsection*{Sauce Ingredients}
+
+\begin{itemize}
+  \item $ \frac{1}{2} $ large onion chopped roughly
+  \item $ 2 $ garlic cloves, chopped
+  \item $ 1 $ green chilli, chopped
+  \item $ 1 $ tin tomatoes
+  \item $ 1 $ cup water ($ \qty{240}{\ml} $)
+  \item $ 1 $ tablespoon ground coriander
+  \item $ 1 $ teaspoon turmeric
+\end{itemize}
+
+\columnbreak{}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ 4 $ chicken thighs or $3 $ chicken breasts
+  \item $ 1 $ red capsicum, chopped
+  \item $ \frac{1}{2} $ large onion, sliced
+  \item $ 2 $ red chillies
+  \item $ 1 $ teaspoon ground cumin
+  \item $ 1 $ teaspoon turmeric
+  \item $ 2 $ teaspoons garam masala
+  \item coriander or basil leaves for presentation
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Take the chopped chicken and coat it in the cumin, ground coriander and turmeric then leave it to marinade in the fridge while you make the sauce.
+  \item Take the chopped chicken and coat it in the cumin, ground coriander and turmeric then leave it to marinade in the fridge while you make the sauce.
+  \item While that is simmering, put the plum tomatoes in a food processor and give it a good whizz - aim for a smooth consistency. Heat another large pan and gently fry the ground coriander, cumin and turmeric in a splash of oil for about a minute. Add the \textit{tomato sauce} to this pan and simmer for around $ \qty{10}{min} $.
+  \item Next give your onion mixture a good whizz in the food processor and add it to the spiced tomato sauce. Give it a stir and simmer for $ \qty{20}{min} $ minutes. You can make large batches of this sauce and freeze it for later use.
+  \item Fry the marinated chicken in oil and stir continuously. After a few minutes, turn down the heat and add the other half of the chopped onion, the red pepper and chillies. Stir this until the onions and pepper soften (and the chicken is cooked, of course).
+  \item Add the earlier prepared sauce to the cooked chicken and simmer for around $ \qty{15}{min} $. Just before you dish it up, stir in the garam masala and chopped leaves. 
+
+\end{enumerate}
+
+\end{document}
