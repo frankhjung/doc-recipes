@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Hyderabadi Tomato Chutney}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ \qty{450}{\gram} $ ripe tomatoes, chopped
+  \item $ 1 $ teaspoon ginger, finely grated
+  \item $ 1 $ teaspoon garlic, mashed pulp
+  \item $ \frac{1}{2} $ teaspoon turmeric, ground
+  \item $ \frac{1}{4} $ teaspoon cayenne pepper
+  \item $ 4 $ tablespoons vegetable oil
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ 4 $ cloves garlic, peeled
+  \item $ 1 $ teaspoon cummin seeds 
+  \item $ \frac{1}{2} $ teaspoon black mustard seeds
+  \item $ \frac{1}{4} $ teaspoon fenugreek seeds
+  \item $ 2 $ dried red chillies, whole
+  \item $ \frac{1}{2} $ teaspoon salt
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Put the tomatoes, ginger, garlic pulp, turmeric and cayenne in a bowl and mix.
+  \item Heat oil in a frying fan over a medium heat.
+  \item When hot, put in the cloves of garlic. Stir and fry until they are brown.
+  \item Add cummin, mustard, fenugreek seeds. Let the sizzle for a couple of seconds.
+  \item Put in the chillies, stir once. They should swell and turn dark red.
+  \item Put in the tomato mixture. Stir and cook for 15 minutes or until tomatoes are fairly dry.
+  \item Add the salt and mix in.
+  \item Can be served hot or cold.
+  \item Store in a jar in a refrigerator. It should last at least a week.
+\end{enumerate}
+
+\href{https://www.penguin.com.au/books/eastern-vegetarian-cooking-9780099777205}{World of East Vegetarian Cooking by Madhur Jaffrey}
+
+\end{document}
