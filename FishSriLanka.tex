@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Grilled Fish with Sri Lankan Tomato-Coriander Curry Paste}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ \qty{450}{\gram} $ haddock, cod, salmon or barramundi
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item $ 5 $ tablespoons peanut or olive oil
+  \item $ 1 $ small cinnamon stick
+  \item $ 2 $ cardamon pods
+  \item $ 1 $ medium onion, sliced in thin half-rings
+  \item $ 2 $ cloves garlic, crushed
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ 1 $ teaspoon ground fennel
+  \item $ 1 $ teaspoon ground coriander
+  \item $ \frac{3}{4} $ teaspoon cayenne pepper
+  \item $ 3 $ medium tomatoes, finely chopped
+  \item $ \qty{30}{\gram} $ fresh coriander, finely chopped
+  \item $ 1 $ tablespoon Dijon mustard
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\subsection*{Fish Marinade}
+
+\begin{itemize}
+  \item Lightly dust the fish with salt and half of the ground turmeric. 
+  \item Cover and set aside in the fridge.
+\end{itemize}
+  
+\subsection*{Fish Marinade}
+
+\begin{enumerate}
+  \item Pour $ 3 $ tablespoons oil into a large, lidded pan, and set on medium high heat. When the oil is hot, put in the cinnamon and cardamon.
+  \item Shortly after put in the onion and garlic. Stir and fry until onions start to brown.
+  \item Add the fennel, ground coriander, cayenne pepper and remaining turmeric. Stir once.
+  \item Add the tomatoes, chopped coriander and $ \frac {1}{2} $ teaspoon salt and $ \qty{250}{\ml} $ water. Bring to the boil, cover, reduce heat to low and simmer gently for $ \qty{15}{min} $.
+  \item Stir in the mustard. Turn off the heat.
+  \item Just before serving, add the fish and gently poach for $ \qty{5}{min} $.
+\end{enumerate}
+
+\href{https://www.eatyourbooks.com/library/recipes/423431/grilled-fish-in-a-sri}{Grilled Fish in a Sri Lankan Tomato-Coriander Curry Sauce by Madhur Jaffrey}
+
+\end{document}
