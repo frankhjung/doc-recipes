@@ -1,0 +1,52 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Green Beans with Mustard Seeds and Chilli}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ \qty{500}{\gram} $ fresh green beans, trimmed
+  \item vegetable oil
+  \item $ 2 $ teaspoons urad dal
+  \item $ 1 $ teaspoon black mustard seeds
+  \item $ 1 $ teaspoon cumin seeds
+  \item $ 1 $ red chilli
+  \item $ \frac{1}{4} $ teaspoon cayenne pepper
+  \item $ \qty{30}{\gram} $ grated coconut
+  \item salt
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat oil in a $ \qty{25}{\cm} $ frying pan over a medium hear.
+  \item Put in mustard seeds, cumin seeds and urad dal. Stir.
+  \item Add red chilli and cayenne pepper. Stir.
+  \item Add beans and salt. Stir.
+  \item Turn heat down.
+  \item Cover and simmer gently for about $ \qty{6}{\minute} $.
+  \item Remove cover and turn up heat.
+  \item Stir and sauté beans until all liquid is gone. The beans should have a dry look.
+  \item Add coconut and serve.
+\end{enumerate}
+
+\href{https://www.eatyourbooks.com/library/recipes/2575259/zakiyas-green-beans-cooked-with}{Zakiya's green beans cooked with mustard seeds and red pepper from The Madhur Jaffrey Cookbook}
+
+\end{document}
