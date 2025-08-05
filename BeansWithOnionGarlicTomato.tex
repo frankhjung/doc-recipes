@@ -1,0 +1,47 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Beans with Onion, Garlic and Tomato}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ \qty{650}{\gram} $ green beans, trimmed
+  \item vegetable oil
+  \item $ 1 $ large onion, halved and finely sliced
+  \item $ 2 $ cloves garlic, finely sliced
+  \item $ \qty{450}{\gram} $ tomatoes, diced
+  \item ground black pepper
+  \item salt
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Heat the oil in a $ \qty{20}{\cm} $ wide pot.
+  \item When hot, add garlic. Stir. 
+  \item Add onions. Stir for until onions are translucent (do not brown).
+  \item Add tomatoes, beans, salt and pepper. Add $ \qty{100}{\ml} $ water. Bring to the boil.
+  \item Cover and lower heat and simmer gently for $ \qty{15}{\min} $ or until beans are cooked.
+  \item Remove lid. Turn up the heat, stir and reduce the liquid to about $ \frac{3}{4} $.
+\end{enumerate}
+
+\href{https://www.eatyourbooks.com/library/recipes/66673/sandras-green-beans-with-onion}{Sandra's green beans with onion, garlic, and tomato from The Madhur Jaffrey Cookbook}
+
+\end{document}
