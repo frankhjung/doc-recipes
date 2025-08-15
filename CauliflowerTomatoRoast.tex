@@ -1,0 +1,45 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Spaghetti with Roast Cauliflower and Tomato}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ \frac{1}{2} $ cauliflower, chopped into small chunks
+  \item $ 2 $ ripe tomatoes, roughly diced
+  \item $ 2 $ tablespoons \href{https://en.wikipedia.org/wiki/Kalamata_olive }{Kalamata} olives
+  \item $ 2 $ tablespoons semi-dried tomatoes
+  \item $ 2 $ cloves garlic
+  \item $ 2 $ tablespoons olive oil
+  \item parsley, rosemary and basil, chopped
+  \item $ 1 $ teaspoon salt
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Mix cauliflower, tomatoes, olives, garlic, olive oil, fresh herbs and salt
+  \item Place in a roasting pan and bake in medium oven for $ \qty{25}{\minute} $
+  \item Mix and serve with spaghetti
+\end{enumerate}
+
+\href{https://www.wholesomebellies.com.au/recipes/spaghetti-with-roast-cauliflower-and-tomato/}{Spaghetti with Roast Cauliflower and Tomato}
+
+\end{document}
