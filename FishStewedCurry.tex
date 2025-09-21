@@ -1,0 +1,83 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Trinidad Curried Stew Fish}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\textbf{For washing the fish}
+
+\begin{itemize}
+  \item $ \qty{900}{\gram}$ fish (red snapper or flat head)
+  \item $ 2 $ teaspoons salt
+  \item $ 1 $ tablespoon lemon juice
+\end{itemize}
+
+\textbf{For marinating the fish}
+
+\begin{itemize}
+  \item salt
+  \item freshly ground pepper
+  \item $ 5 $ shallots, peeled \& diced
+  \item $ 3 $ cloves garlic, peeled \& chopped
+  \item $ \frac{1}{2} $ teaspoon ground turmeric
+  \item $ 1 $ tablespoon lemon juice
+\end{itemize}
+
+\columnbreak{}
+
+\textbf{For the curry sauce}
+
+\begin{itemize}
+  \item $ 3 $ tablespoons peanut or olive oil
+  \item $ 1 $ medium onion, finely chopped
+  \item $ 2 $ cloves garlic, finely chopped
+  \item $ 2 $ hot chillies, chopped
+  \item $ 4 $ teaspoons hot curry powder
+  \item $ \qty{300}{\ml} $ tomatoes, grated
+  \item $ \qty{400}{\ml} $ vegetable stock
+  \item $ \frac{1}{2} $ teaspoon salt
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Wash fish. Rub with salt and lemon juice. Rinse with cold water. Put
+  into a baking dish. Set aside.
+  \item Put the onions, garlic, pepper, turmeric and lemon juice and $
+  \frac{1}{2} $ teaspoon salt and $ 2 $ tablespoons water into a blender. Blend
+  into a smooth paste.
+  \item Rub the paste over the fish and marinate for $ \qty{30}{\min} $.
+  \item Make the curry sauce. Heat the oil in a wide lidded pan and set over a
+  medium-high heat. When hot, add the onions, garlic and chillies. Fry until
+  onions begin to brown. Stir in the curry powder. Add tomatoes, stock and salt.
+  Stir and bring to the boil. Cover, reduce the heat to low and cook gently for
+  $ \qty{30}{\min} $.
+  \item Preheat the oven to $ \qty{180}{\celsius} $.
+  \item Pour the sauce over the marinated fish, cover the dish with foil and
+  bake in the oven for $ \qty{30}{\min} $.
+\end{enumerate}
+
+Madhur Jaffrey's Ultimate Curry Bible, Trinidad, Birdie's Curried Stew Fish
+
+\end{document}
