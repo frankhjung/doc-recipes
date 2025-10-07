@@ -1,0 +1,75 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Loquat Chutney}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ 24 $ loquats, skins on, pitted, chopped
+  \item $ \frac{1}{2} $ onion, finely chopped
+  \item $ 3 $ garlic cloves, peeled, finely chopped
+  \item $ 1 $ tablespoon ginger, grated
+  \item $ \frac{1}{2} $ teaspoon salt
+  \item $ 3 $ tablespoons apple cider vinegar
+  \item $ 1 $ tablespoon honey, maple  or sugar syrup
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ \frac{1}{2} $ teaspoon chilli flakes
+  \item $ \frac{1}{2} $ teaspoon coriander seeds
+  \item $ \frac{1}{2} $ teaspoon mustard seeds
+  \item $ \frac{1}{2} $ teaspoon cumin powder
+  \item $ \frac{1}{2} $ teaspoon turmeric powder (with pinch of black pepper)
+  \item $ 1 $ teaspoon curry powder
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item \textbf{Prepare Ingredients} Wash, pit, and chop loquats. Finely chop
+  onion, grate ginger, and crush garlic.
+
+  \item \textbf{Toast Spices} Heat a splash of oil in a small pan over low heat.
+  Add coriander and mustard seeds; let them pop and release aroma (1--2
+  minutes).
+
+  \item \textbf{Cook Aromatics} Add onion, garlic, and ginger. Stir-fry for 2--3
+  minutes until onions soften.
+
+  \item \textbf{Add Spices} Stir in chilli flakes, cumin, turmeric (with black
+  pepper), curry powder, and cardamom. Mix well to coat.
+
+  \item \textbf{Simmer Chutney} Add chopped loquats, salt, syrup, and apple
+  cider vinegar. Stir and simmer gently for 6--7 minutes, stirring occasionally.
+
+  \item \textbf{Cool \& Store} Let chutney cool completely. Transfer to a
+  jar and refrigerate. Keeps for about 1 week.
+
+\end{enumerate}
+
+\href{https://dishingoutplants.com/10-minute-nispero-chutney-spicy-loquat-recipe/}{10-Minute Níspero Chutney (Spicy Loquat Recipe)}
+
+\end{document}
