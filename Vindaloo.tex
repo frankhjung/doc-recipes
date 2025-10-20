@@ -1,0 +1,83 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Chicken Vindaloo}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\begin{itemize}
+  \item $ \qty{2}{kg} $ chicken pieces, skin down
+  \item $ \frac{1}{2} $ teaspoon turmeric
+  \item $ \frac{1}{2} $ teaspoon cayenne pepper
+  \item $ 1 $ tablespoon ground cumin
+  \item $ 1 $ tablespoon red paprika
+  \item $ 4 $ tablespoons peanut oil
+  \item $ 1 \frac{1}{2} $ teaspoons garam masala
+  \item $ \frac{1}{2} $ teaspoon brown mustard seeds
+  \item $ \frac{1}{4} $ teaspoon fenugreek seeds
+  \item $ 1 $ tablespoon ground coriander
+\end{itemize}
+
+\columnbreak{}
+
+\begin{itemize}
+  \item $ 15 $ fresh curry leaves
+  \item $ 2 $ tomatoes, chopped
+  \item $ 10 $ cloves garlic, crushed
+  \item $ 2 $ tablespoons fresh ginger, grated
+  \item $ 2 $ medium onions, peeled and sliced into fine half-rings
+  \item $ \qty{120}{\ml} $ cider vinegar
+  \item $ 2 $ teaspoons salt
+  \item $ 1 $ tablespoon sugar
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Mix turmeric, cumin, paprika, coriander, cayenne pepper and garam masala
+  in a small bowl and set aside.
+  \item Heat frying pan and add chicken pieces, skin down.
+  \item Cook until the skin starts to brown the turn over and brown the other
+  side.
+  \item Remove chicken and set aside.
+  \item Add the mustard and fenugreek seeds duck fat that that has rendered out
+  in the frying pan and cook them until they start to pop.
+  \item Add the curry leaves and onions and stir fry until the start to brown.
+  \item Add the ginger and garlic and cook for about 1 minute before stirring in
+  the spice mixture.
+  \item Cook for 1 minute before adding the tomatoes and cook for a further $
+  \qty{3}{\min} $.
+  \item Add browned chicken to the mixture and stir to coat.
+  \item Add the vinegar, water, salt and sugar and bring to the boil with the
+  lid on.
+  \item Turn down the heat and simmer for $ \qty{45}{\min} $ minutes. Lift lid
+  occasionally to stir.
+  \item Increase heat to medium-low and simmer, partially covered for another $
+  \qty{30}{\min} $ or until chicken is cooked through and the sauce has
+  thickened.
+
+\end{enumerate}
+
+\href{https://thethermalcookrecipes.wordpress.com/2011/05/15/madhur-jaffreys-duck-vindaloo-apapted-for-mr-ds-thermal-cooker/}{Madhur Jaffreys Duck Vindaloo}
+
+\end{document}
