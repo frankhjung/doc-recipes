@@ -1,0 +1,50 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Spicy Fried Beans}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ \qty{500}{\gram} $ green beans
+  \item $ 1 $ tablespoon oil
+  \item $ 1 $ medium onion, finely chopped
+  \item $ 1 $ tablespoon grated ginger
+  \item $ 1 $ teaspoon ground turmeric
+  \item $ 1 $ teaspoon garam masala
+  \item $ \frac{1}{2} $ teaspoon chilli powder
+  \item salt
+  \item 12 cherry tomatoes, chopped
+  \item lemon juice
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Top and tail beans, remove strings if necessary and cut them into bite size pieces. 
+  \item Heat the ghee in a saucepan and fry the onions and ginger over a medium low heat until the onions are golden.
+  \item Add the turmeric, garam masala, chilli powder and salt and fry for 2 minutes.
+  \item Add tomatoes or water and cook, stirring, until the tomatoes are cooked to a pulp and most of the liquid evaporates.
+  \item Add beans and stir well. Partially cover the pan with a lid and cook until the beans are just tender.
+  \item Stir in lemon juice to taste.
+\end{enumerate}
+
+\href{https://practicallydaily.blogspot.com/2009/08/spicy-fried-beans.html}{Spicy fried beans}
+
+\end{document}
