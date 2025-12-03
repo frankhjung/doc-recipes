@@ -1,0 +1,79 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Greek Grilled Fish}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\subsubsection*{For the ladolemono dressing}
+
+\begin{itemize}
+  \item $ 6 $ tablespoon extra virgin olive oil
+  \item $ 2 $ tablespoon fresh lemon juice
+  \item $ 1 $ tablespoon oregano
+  \item $ 1 $ pinch of salt
+\end{itemize}
+
+\columnbreak{}
+
+\subsubsection*{For the fish}
+
+\begin{itemize}
+  \item \qty{500}{\gram} fish
+  \item $ 4 $ garlic cloves, chopped finely
+  \item $ 2 $ spring onions, chopped length wise
+  \item $ \frac {1} {4} $ cup parsley, chopped
+  \item $ \frac {1} {2} $ lemon, thinly sliced
+  \item salt and pepper to season fish
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\subsubsection*{For the ladolemono dressing}
+
+\begin{enumerate}
+  \item In a small bowl, whisk together lemon juice, olive oil, and a pinch of
+  salt until it thickens. Stir in the oregano. 
+  \item Set aside 3 tbsp for serving.
+\end{enumerate}
+
+\subsubsection*{For the fish}
+
+\begin{enumerate}
+  \item Preheat oven at \qty{180}{\celsius}
+  \item Pat the fish fillets dry and season with a bit of salt and pepper.
+  \item Place the fillets on a lightly oiled baking pan.
+  \item Sprinkle over the fish the chopped spring onion and chopped garlic.
+  \item Place the white parts of the spring onion in the pan, next to the fish.
+  \item Pour the ladolemono dressing on top of the fish, make sure the garlic
+  and onions are also coated.
+  \item Place the lemon slices in top of the fish.
+  \item Sprinkle with 2 tbsp chopped parsley.
+  \item Bake for \qty{15}{\min}, until opaque. Do not overcook.
+  \item Remove the fish fillets from the oven, drizzle with the saved ladolemono
+  and garnish with $2$ tbsp chopped parsley.
+  \item Serve with lightly boiled greens or a leafy salad.  
+\end{enumerate}
+
+\href{https://www.olivetomato.com/mediterranean-baked-sole-with-greek-ladolemono-dressing/}{Mediterranean Baked Sole with Greek Ladolemono Dressing}
+
+\end{document}
