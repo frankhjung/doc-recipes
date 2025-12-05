@@ -12,26 +12,47 @@
 #	make MyRecipe.pdf
 
 .SUFFIXES: .tex .pdf
-.DEFAULT: all
 
 TEXS := $(wildcard *.tex)
 PDFS := $(patsubst %.tex, %.pdf, $(TEXS))
 
+#
+# Make PDF (required before upload)
+#
 .tex.pdf:
 	-latexmk -f -gg -quiet -pdf \
 		-interaction=nonstopmode -shell-escape \
 		-pdflatex="pdflatex %O %S" $<
 
-
 .PHONY: all
-all:		$(PDFS)
+all: $(PDFS)
 
+#
+# Google Drive Upload
+#
+# To upload a recipe to Google Drive, use a command like:
+#
+#   make MyRecipe.upload GDRIVE_FOLDER_ID=12345
+#
+
+# Your Google Drive folder ID (My Drive/Recipes)
+# Set via environment variable or override on command line
+GDRIVE_FOLDER_ID ?= $(error GDRIVE_FOLDER_ID is not set)
+
+# Pattern rule to upload any given PDF
+# Usage: make RecipeName.upload
+.PHONY: %.upload
+%.upload: %.pdf
+	@echo "Uploading $< to Google Drive..."
+	@echo rclone copy $< gdrive: --drive-root-folder-id $(GDRIVE_FOLDER_ID)
+	@echo Upload complete
+
+#
+# Cleanup rules
+#
 .PHONY: clean
 clean:
 	-latexmk -quiet -c $(TEXS)
 	-$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
 	-$(RM) *~
-
-.PHONY: cleanall
-cleanall: clean
 	-latexmk -quiet -C $(TEXS)

@@ -52,3 +52,24 @@ Example:
 lp -d Canon_G3010 -t "Lamb Hyderabadi" LambHyderabadi.pdf
 ```
 
+## How to upload the recipe to Google Drive
+
+To upload a recipe to Google Drive, use a command like:
+
+Connect to gdrive:
+
+```bash
+rclone config reconnect gdrive:
+```
+
+Build the PDF:
+
+```bash
+make MyRecipe.pdf
+```
+
+Upload the PDF:
+
+```bash
+make MyRecipe.upload GDRIVE_FOLDER_ID=XYZ
+```
