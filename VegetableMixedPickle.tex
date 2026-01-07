@@ -1,0 +1,74 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Mixed Vegetable Pickles}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{multicols}{2}
+
+\subsubsection*{Vegetable mix}
+
+\begin{itemize}
+  \item $1$ large green cabbage, sliced
+  \item $4$ cups of sliced pickling cucumbers
+  \item $4$ bell peppers, any colour, chopped
+  \item $4$ very large carrots, sliced
+  \item $8$ green tomatoes, sliced
+  \item $2$ medium sized onions, sliced
+  \item $2$ teaspoon salt
+  \item $1$ teaspoon caraway seeds
+  \item $2$ tablespoon peppercorns
+  \item $1$ teaspoon mustard seeds
+\end{itemize}
+
+\columnbreak{}
+
+\subsubsection*{Pickling liquid}
+
+\begin{itemize}
+  \item vegetable juice (from salting the vegetables)
+  \item $4$ cups water
+  \item $1 \frac{1}{2}$ cups vinegar
+  \item $4$ tablespoon sugar
+  \item $4$ tablespoon salt
+\end{itemize}
+
+\end{multicols}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Wash the vegetables thoroughly and slice. Place in a large bowl.
+  Sprinkle with salt, caraway seeds, peppercorns and the mustard seed.
+  Toss and let stand for 1 hour.
+  \item Squeeze the juice out of the vegetables, reserving juice and spices.
+  \item Pack the sterilized bottles with the vegetables $\frac{3}{4}$ way up.
+  \item To make the brine, place the reserved vegetable juice in a pot.
+  Add the water, vinegar and the seasonings.
+  \item Taste the brine; it should be pleasantly sour. Bring the brine to the
+  boil. Boil for 3 minutes.
+  \item Pour the hot brine in the bottles, leaving a generous head space.
+  \item Cap the bottles and place them into a water bath. Bring to a boil.
+  Process the jars for 30 minutes.
+\end{enumerate}
+
+\href{https://zsuzsaisinthekitchen.blogspot.com/2015/11/mixed-vegetable-pickles-csalamade.html}{zsuzsa is in the kitchen}
+
+\end{document}
