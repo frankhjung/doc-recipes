@@ -4,7 +4,7 @@ My favourite recipes.
 
 ## Why?
 
-Because food is wonderful.
+_Because food is wonderful._
 
 These recipes have been collected over the years. They are being constantly
 modified to my tastes. I do prefer if recipes are simple enough to be enjoyable
@@ -13,16 +13,24 @@ are a bonus. But, ultimately it is all about the taste.
 
 So please, enjoy.
 
+## Prerequisites
+
+To use these recipes, ensure you have:
+
+- **[latexmk](https://mgeier.github.io/latexmk.html)**: TeX processing tool
+- **[pdflatex](https://pypi.org/project/pdflatex/)**: PDF generation from TeX
+- **[rclone](https://rclone.org/)**: For uploading recipes to Google Drive (optional)
+
 ## How To - write a new recipe (LibreOffice)
 
 Write recipes with LibreOffice using the template: `_recipe.ott`. Then save in
 Open Document Format.
 
-To share them, export as a PDF. However, most of my friends now use
-[LibreOffice](https://www.libreoffice.org/), so sending an
-[ODF](https://en.wikipedia.org/wiki/OpenDocument) is now much less of a problem.
+To share them, export as a PDF. You can also send
+[ODF](https://en.wikipedia.org/wiki/OpenDocument) files to others who use
+[LibreOffice](https://www.libreoffice.org/).
 
-## How To - write a new recipe (Tex)
+## How To - write a new recipe (TeX)
 
 Copy the recipe template `_recipe.tex` to a new file, for example
 [Meatballs.tex](Meatballs.tex).
@@ -30,12 +38,12 @@ Copy the recipe template `_recipe.tex` to a new file, for example
 Edit [TeX](https://www.latex-project.org/) file to update header, ingredients
 and method. I also add a link to the original recipe source.
 
-I use the [Enter Tex](https://gitlab.gnome.org/World/gedit/enter-tex/) editor.
+I use the [Enter TeX](https://gitlab.gnome.org/World/gedit/enter-tex/) editor.
 
 Create PDF using:
 
 ```bash
-make Meadballs.pdf
+make Meatballs.pdf
 ```
 
 ## How To - print the recipe (PDF)
@@ -72,5 +80,19 @@ make MyRecipe.pdf
 Upload the PDF:
 
 ```bash
-make MyRecipe.upload GDRIVE_FOLDER_ID=XYZ
+make MyRecipe.upload GDRIVE_FOLDER_ID=<your-folder-id>
 ```
+
+**Finding your Google Drive Folder ID**: Open your Recipes folder in Google
+Drive, look at the URL bar—the folder ID is the alphanumeric string after
+`/folders/`. For example, in
+`https://drive.google.com/drive/folders/1ABCDef_GHI`, the ID is `1ABCDef_GHI`.
+
+## Troubleshooting
+
+- **latexmk not found**: Install TeX Live or equivalent for your system.
+- **Google Drive upload fails**: Run `rclone config reconnect gdrive:` and ensure
+  your `GDRIVE_FOLDER_ID` is correct.
+- **PDF generation hangs**: Check for LaTeX errors in the `.log` file or enable
+  verbose mode by removing `-quiet` from the Makefile.
+- Look at any generated log files for more detail.
