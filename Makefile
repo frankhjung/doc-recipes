@@ -44,7 +44,7 @@ GDRIVE_FOLDER_ID ?= $(error GDRIVE_FOLDER_ID is not set)
 .PHONY: %.upload
 %.upload: %.pdf
 	@echo "Uploading $< to Google Drive..."
-	@echo rclone copy $< gdrive: --drive-root-folder-id $(GDRIVE_FOLDER_ID)
+	@rclone copy $< gdrive: --drive-root-folder-id $(GDRIVE_FOLDER_ID)
 	@echo Upload complete
 
 #

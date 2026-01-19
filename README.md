@@ -15,8 +15,8 @@ So please, enjoy.
 
 ## How To - write a new recipe (LibreOffice)
 
-Write recipes with LibreOffice using the template: `_recipe.ott`.
-Then save in Open Document Format.
+Write recipes with LibreOffice using the template: `_recipe.ott`. Then save in
+Open Document Format.
 
 To share them, export as a PDF. However, most of my friends now use
 [LibreOffice](https://www.libreoffice.org/), so sending an
@@ -54,7 +54,8 @@ lp -d Canon_G3010 -t "Lamb Hyderabadi" LambHyderabadi.pdf
 
 ## How to upload the recipe to Google Drive
 
-To upload a recipe to Google Drive, use a command like:
+To upload a recipe to Google Drive, use the [rclone](https://rclone.org/)
+command:
 
 Connect to gdrive:
 
