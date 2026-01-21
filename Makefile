@@ -48,9 +48,9 @@ all: $(PDFS)
 #   make MyRecipe.upload GDRIVE_FOLDER_ID=12345
 #
 
-# Your Google Drive folder ID (My Drive/Recipes)
+# My Google Drive folder ID (My Drive/Recipes)
 # Set via environment variable or override on command line
-GDRIVE_FOLDER_ID ?= $(error GDRIVE_FOLDER_ID is not set)
+GDRIVE_RECIPES ?= $(error GDRIVE_RECIPES is not set)
 
 # Pattern rule to upload any given PDF
 # Usage: make RecipeName.upload
