@@ -57,7 +57,7 @@ GDRIVE_RECIPES ?= $(error GDRIVE_RECIPES is not set)
 .PHONY: %.upload
 %.upload: %.pdf
 	@echo "Uploading $< to Google Drive..."
-	@rclone copy $< gdrive: --drive-root-folder-id $(GDRIVE_FOLDER_ID)
+	@rclone copy -uv $< gdrive: --drive-root-folder-id $(GDRIVE_FOLDER_ID)
 	@echo Upload complete
 
 #
