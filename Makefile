@@ -65,11 +65,11 @@ GDRIVE_RECIPES ?= $(error GDRIVE_RECIPES is not set)
 #
 .PHONY: clean
 clean:
-	@echo "Cleaning LaTeX intermediate files..."
+	@echo Cleaning LaTeX intermediate files...
 	-latexmk -quiet -c $(TEXS)
 	-$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
 	-$(RM) *~
-	@echo "Performing full cleanup..."
+	@echo Performing full cleanup...
 	-latexmk -quiet -C $(TEXS)
 
 #
@@ -90,5 +90,5 @@ help:
 #
 .PHONY: list
 list:
-	@echo "Available recipes:"
-	@$(foreach tex, $(TEXS), echo "  - $(basename $(tex))";)
+	@echo Available recipes...
+	@printf '  - %s\n' $(patsubst %.tex,%,$(filter-out _recipe.tex, $(TEXS)))

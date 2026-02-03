@@ -1,15 +1,15 @@
 # documents-recipes
 
-My favourite recipes.
+My favourite recipes and notes on how to manage them.
 
 ## Why?
 
 _Because food is wonderful._
 
 These recipes have been collected over the years. They are being constantly
-modified to my tastes. I do prefer if recipes are simple enough to be enjoyable
-without being overly taxing in preparation. Interesting spices and vegetables
-are a bonus. But, ultimately it is all about the taste.
+modified to my tastes. I prefer recipes that are simple and enjoyable without
+being overly taxing to prepare. Interesting spices and vegetables are a bonus.
+But ultimately, it is all about the taste.
 
 So please, enjoy.
 
@@ -18,10 +18,13 @@ So please, enjoy.
 To use these recipes, ensure you have:
 
 - **[latexmk](https://mgeier.github.io/latexmk.html)**: TeX processing tool
-- **[pdflatex](https://pypi.org/project/pdflatex/)**: PDF generation from TeX
-- **[rclone](https://rclone.org/)**: For uploading recipes to Google Drive (optional)
+- **pdflatex**: PDF generation from TeX
+- **[rclone](https://rclone.org/)**: For uploading recipes to Google Drive
+  (optional)
 
-## How To - write a new recipe (LibreOffice)
+## How To
+
+### write a new recipe (LibreOffice)
 
 Write recipes with LibreOffice using the template: `_recipe.ott`. Then save in
 Open Document Format.
@@ -30,7 +33,7 @@ To share them, export as a PDF. You can also send
 [ODF](https://en.wikipedia.org/wiki/OpenDocument) files to others who use
 [LibreOffice](https://www.libreoffice.org/).
 
-## How To - write a new recipe (TeX)
+### write a new recipe (TeX)
 
 Copy the recipe template `_recipe.tex` to a new file, for example
 [Meatballs.tex](Meatballs.tex).
@@ -46,9 +49,9 @@ Create PDF using:
 make Meatballs.pdf
 ```
 
-## How To - print the recipe (PDF)
+### print the recipe (PDF)
 
-To print the PDF to a network printer:
+To print a PDF to a network printer:
 
 ```bash
 lp -d device -t title file.pdf
@@ -60,7 +63,7 @@ Example:
 lp -d Canon_G3010 -t "Lamb Hyderabadi" LambHyderabadi.pdf
 ```
 
-## How to upload the recipe to Google Drive
+### upload the recipe to Google Drive
 
 To upload a recipe to Google Drive, use the [rclone](https://rclone.org/)
 command:
@@ -91,8 +94,8 @@ Drive, look at the URL bar—the folder ID is the alphanumeric string after
 ## Troubleshooting
 
 - **latexmk not found**: Install TeX Live or equivalent for your system.
-- **Google Drive upload fails**: Run `rclone config reconnect gdrive:` and ensure
-  your `GDRIVE_FOLDER_ID` is correct.
+- **Google Drive upload fails**: Run `rclone config reconnect gdrive:` and
+  ensure your `GDRIVE_FOLDER_ID` is correct.
 - **PDF generation hangs**: Check for LaTeX errors in the `.log` file or enable
   verbose mode by removing `-quiet` from the Makefile.
-- Look at any generated log files for more detail.
+- Check the generated log files for more details.
