@@ -83,7 +83,7 @@ make MyRecipe.pdf
 Upload the PDF:
 
 ```bash
-make MyRecipe.upload GDRIVE_FOLDER_ID=<your-folder-id>
+make MyRecipe.upload GDRIVE_RECIPES=<your-folder-id>
 ```
 
 **Finding your Google Drive Folder ID**: Open your Recipes folder in Google
@@ -94,8 +94,8 @@ Drive, look at the URL bar—the folder ID is the alphanumeric string after
 ## Troubleshooting
 
 - **latexmk not found**: Install TeX Live or equivalent for your system.
-- **Google Drive upload fails**: Run `rclone config reconnect gdrive:` and
-  ensure your `GDRIVE_FOLDER_ID` is correct.
+- **Google Drive upload fails**: Run `rclone config reconnect gdrive:` and ensure
+  your `GDRIVE_RECIPES` is correct.
 - **PDF generation hangs**: Check for LaTeX errors in the `.log` file or enable
   verbose mode by removing `-quiet` from the Makefile.
 - Check the generated log files for more details.
