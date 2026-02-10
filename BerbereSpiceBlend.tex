@@ -1,0 +1,51 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Berbere Spice Blend}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ \frac{1}{2} $ cup ground dried chillis
+  \item $ \frac{1}{4} $ cup paprika
+  \item $ 1 $ tablespoon cayenne pepper
+  \item $ 1 $ teaspoon onion powder
+  \item $ 1 $ teaspoon ground ginger
+  \item $ 1 $ teaspoon cumin
+  \item $ 1 $ teaspoon ground coriander
+  \item $ 1 $ teaspoon ground cardamom
+  \item $ 1 $ teaspoon ground fenugreek
+  \item $ \frac{1}{2} $ teaspoon garlic powder
+  \item $ \frac{1}{2} $ teaspoon ground cinnamon
+  \item $ \frac{1}{2} $ teaspoon ground allspice
+  \item $ \frac{1}{2} $ teaspoon ground cloves
+  \item $ \frac{1}{4} $ teaspoon ground nutmeg
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Place ground chiles, paprika, and cayenne pepper into a bowl; stir. 
+  \item Add onion powder, ginger, cumin, coriander, cardamom, fenugreek, garlic powder, cinnamon, allspice, cloves, and nutmeg. 
+  \item Gently whisk together until thoroughly mixed.
+\end{enumerate}
+
+\href{https://www.allrecipes.com/recipe/255863/berbere-spice-blend/}{Source: Berbere Spice Blend}
+
+\end{document}
