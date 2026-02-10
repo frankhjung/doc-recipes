@@ -1,0 +1,50 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{lipsum}     % insert dummy 'Lorem ipsum' text
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Chicken with Harissa \& Tomatoes}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item $ 4 $ chicken breasts, skinless
+  \item $ 2 $ tablespoon harissa
+  \item $ 1 $ teaspoon olive oil
+  \item $ 1 $ teaspoon dried oregano
+  \item $ 6 $ large olives, halved
+  \item $ \qty{250}{\gram} $ cherry tomatoes
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Put chicken, run with the harissa, oil, oregano and vodka. Marinade for an hour or more.
+  \item Heat oven to \qty{200}{\celsius} fan.
+  \item Pan fry the chicken until sealed.
+  \item Add the cherry tomatoes and olives to the tray. Roast until the tomato skins start to split and the chicken is cooked through.
+\end{enumerate}
+
+\subsection*{Harissa}
+
+If you don't have harissa then prepare this alternative:
+
+\begin{enumerate}
+  \item tomato paste, smoked paprika, and Moroccan chili powder with \textbf{Berbere Spice Blend}
+\end{enumerate}
+
+\end{document}
