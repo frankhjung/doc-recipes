@@ -1,0 +1,56 @@
+% vim: set filetype=plaintex shiftwidth=2 tabstop=2 expandtab:
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[headheight=100pt]{geometry}
+\usepackage{fancyhdr}   % custom headers
+\usepackage{amsmath}    % measurement fractions
+\usepackage{multicol}   % multi column for ingredients
+\usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref}   % links
+\usepackage{siunitx}    % degrees Celsius and measures, see https://texdoc.org/serve/siunitx/0
+\usepackage{times}      % alternate font
+\usepackage{textcomp}   % temperature
+
+\pagestyle{fancy}
+\fancyhf{}  % clear header and footer
+\fancyhead[L]{\fontsize{14}{10} \selectfont Salmon with Tomato}
+
+\begin{document}
+
+\subsection*{Ingredients}
+
+\begin{itemize}
+  \item Smoked Salmon, skin on
+  \item Fresh garlic, chopped
+  \item Capers
+  \item 1 Orange (juice and zest)
+  \item Cherry tomatoes
+  \item Spinach
+  \item Fresh chilli, chopped
+  \item Olive oil
+  \item Sea salt \& black pepper
+\end{itemize}
+
+\medskip
+
+\subsection*{Method}
+
+\begin{enumerate}
+  \item Cook pasta according to packet instructions, drain and set aside.
+  \item Seperate the skin from the smoked salmon and cut into strips.
+  \item Cut the salmon into peices and set aside.
+  \item Heat olive oil, in a pan, over medium heat.
+  \item Once the oil is hot, add cherry tomatoes and salmon skin and cook until
+  they begin to blister.
+  \item Add garlic, capers, chilli and orange zest and saut\'{e} until cooked,
+  being careful that the garlic doesn't burn.
+  \item Once cooked through, add orange juice and sea salt, stir to mix well.
+  \item Add $\frac {3} {4}$ of the spinach and stir to combine.
+  \item Add the smoked salmon and stir to combine.
+  \item Add the cooked pasta and stir to combine.
+  \item Serve over the remaining spinach.
+  \item Shave parmesan over the top with cracked pepper.
+\end{enumerate}
+
+\href{https://kalejunkie.com/quick-easy-salmon-with-tomato-lemon-sauce/}{Based on Kale's Salmon with Tomato Saucerecipe}
+
+\end{document}
