@@ -25,6 +25,8 @@ endif
 # Corresponding PDF files
 PDFS := $(patsubst %.tex, %.pdf, $(TEXS))
 
+.DEFAULT_GOAL := help
+
 #
 # Make PDF (required before upload)
 # Flags:
@@ -35,13 +37,13 @@ PDFS := $(patsubst %.tex, %.pdf, $(TEXS))
 #   -interaction=nonstopmode: Don't stop on LaTeX errors
 #   -shell-escape: Allow LaTeX to run shell commands (USE WITH CAUTION)
 #
-%.pdf: %.tex
+%.pdf: %.tex ## Build PDF from TeX file
 	@latexmk -f -gg -quiet -pdf \
 		-interaction=nonstopmode -shell-escape \
 		-pdflatex="pdflatex %O %S" $<
 
 .PHONY: all
-all: $(PDFS)
+all: $(PDFS) ## Build all recipe PDFs
 
 #
 # Google Drive Upload
@@ -57,7 +59,7 @@ GDRIVE_RECIPES ?=
 
 # Guard to ensure environment variables are set
 .PHONY: guard-%
-guard-%:
+guard-%: ## Ensure a required environment variable is set
 	@if [ -z "$($*)" ]; then \
 		echo "Error: Variable $* is not set."; \
 		echo "Usage: make <target> GDRIVE_RECIPES=your_folder_id"; \
@@ -67,7 +69,7 @@ guard-%:
 # Pattern rule to upload any given PDF
 # Usage: make RecipeName.upload
 .PHONY: %.upload
-%.upload: %.pdf guard-GDRIVE_RECIPES
+%.upload: %.pdf guard-GDRIVE_RECIPES ## Upload PDF to Google Drive
 	@echo "Uploading $< to Google Drive..."
 	@rclone copy "$<" gdrive: --drive-root-folder-id $(GDRIVE_RECIPES) --update --verbose
 	@echo Upload complete
@@ -76,7 +78,7 @@ guard-%:
 # Cleanup rules
 #
 .PHONY: clean
-clean:
+clean: ## Remove generated files and auxiliary LaTeX files
 	@echo "Performing full cleanup of LaTeX files..."
 	-latexmk -quiet -C $(wildcard *.tex)
 	-$(RM) *~
@@ -85,19 +87,18 @@ clean:
 # Help target
 #
 .PHONY: help
-help:
-	@echo "Recipe Management Commands:"
-	@echo "  make <recipe>.pdf     - Generate PDF from TeX file (e.g., make Meatballs.pdf)"
-	@echo "  make all              - Generate all recipe PDFs"
-	@echo "  make <recipe>.upload  - Upload PDF to Google Drive (requires GDRIVE_RECIPES)"
-	@echo "  make list             - List all available recipes"
-	@echo "  make clean            - Remove all generated files"
-	@echo "  make help             - Show this help message"
+help: ## Display this help
+	@printf "Default goal: \033[36m%s\033[0m\n" "${.DEFAULT_GOAL}"
+	@awk 'BEGIN {FS = ":.*##"; \
+		printf "\nUsage:\n  make \033[36m<target>\033[0m\n\nTargets:\n"} \
+		/^[a-zA-Z0-9_.%\-]+:.*?##/ \
+		{ printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 }' \
+		$(MAKEFILE_LIST)
 
 #
 # List available recipes
 #
 .PHONY: list
-list:
+list: ## List available recipes
 	@echo Available recipes...
 	@printf '  - %s\n' $(patsubst %.tex,%,$(filter-out _recipe.tex, $(TEXS)))
