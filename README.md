@@ -91,6 +91,14 @@ Drive, look at the URL bar—the folder ID is the alphanumeric string after
 `/folders/`. For example, in
 `https://drive.google.com/drive/folders/1ABCDef_GHI`, the ID is `1ABCDef_GHI`.
 
+To upload a sequence of recipes:
+
+```bash
+for f in $(git st | rg -F tex | cut -d\  -f 3); do make ${f%%tex}upload; done
+```
+
+This will upload all changed recipes, assuming you have PDFs generated.
+
 ## Troubleshooting
 
 - **latexmk not found**: Install TeX Live or equivalent for your system.
